@@ -122,6 +122,10 @@
     {% include "partial/piwik.html" %}
   {% endif %}
 
+  {% if CLICKY_ID %}
+    {% include "partial/clicky.html" %}
+  {% endif %}
+
   {% block additional_js %}{% endblock %}
 </body>
 </html>
